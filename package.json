@@ -4,6 +4,7 @@
   "description": "TeachMe is a website that matches students with a teacher to help them learn a subject of their choice.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "migrate": "knex migrate:latest",
     "down": "knex migrate:down",
@@ -12,7 +13,6 @@
   },
   "author": "Aia Makhruka",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "axios": "^1.4.0",
     "cors": "^2.8.5",
