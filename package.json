@@ -22,5 +22,8 @@
     "knex": "^2.4.2",
     "mysql2": "^3.3.5",
     "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2"
   }
 }
