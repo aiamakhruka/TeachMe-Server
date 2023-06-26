@@ -1,21 +1,3 @@
-// const { faker } = require('@faker-js/faker');
-
-//  exports.seed = function(knex) {
-//     // Deletes ALL existing entries
-//     return knex('enrollment').del()
-//       .then(function () {
-//         // Inserts seed entries
-//         let enrollments = [];
-//         for(let i = 1; i <= 25; i++){
-//           enrollments.push({
-//             id: i,
-//             user_id: i + 25,
-//             class_id: i
-//           });
-//         }
-//         return knex('enrollment').insert(enrollments);
-//       });
-//   };
 
 
 /**

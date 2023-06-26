@@ -1,49 +1,4 @@
-// const { faker } = require('@faker-js/faker');
 
-// exports.seed = function(knex) {
-//     // Deletes ALL existing entries
-//     return knex('students').del()
-//       .then(function () {
-//         // Inserts seed entries
-//         let students = [];
-//         for(let i = 26; i <= 50; i++){
-//           students.push({
-//             student_id: i,
-//             name: faker.person.fullName(),
-//             grade_level: `Grade ${faker.number.int({min:1, max:12})}`
-//           });
-//         }
-//         return knex('students').insert(students);
-//       });
-//   };
- 
-// const { faker } = require('@faker-js/faker');
-// // import { describe, it, expect } from 'vitest';
-// // import { faker } from '@faker-js/faker/locale/en';
-
-// exports.seed = function(knex) {
-//   // Deletes ALL existing entries
-//   return knex('teachers').del()
-//     .then(function () {
-//       // Inserts seed entries
-//       let teachers = [];
-//       for(let i = 1; i <= 25; i++){
-//         teachers.push({
-//           student_id: i,
-//           name: faker.person.fullName(),
-//           age: faker.number.int({min:24, max:60}),
-//           specialization: faker.person.jobTitle(),
-//           experience: faker.number.int({min:1, max:20}),
-//           rating: faker.number.int({min:1, max:5, precision: 0.1}),
-//         //   latitude: faker.address.latitude(),
-//         //   longitude: faker.address.longitude(),
-//         //   city: faker.location.city(),
-//           country: faker.location.country()
-//         });
-//       }
-//       return knex('teachers').insert(teachers);
-//     });
-// };
 
 /**
  * @param { import("knex").Knex } knex

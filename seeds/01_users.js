@@ -1,35 +1,4 @@
-// const { faker } = require("@faker-js/faker");
 
-// // seeds/01_users.js
-// exports.seed = function (knex) {
-
-//   // Generate names
-//   let names = [];
-//   for (let i = 0; i < 50; i++) {
-//     names.push(faker.person.fullName());
-//   }
-//   // Deletes ALL existing entries
-//   return knex("enrollment")
-//     .del()
-//     .then(() => knex("classes").del())
-//     .then(() => knex("students").del())
-//     .then(() => knex("teachers").del())
-//     .then(() => knex("users").del())
-//     .then(function () {
-//       // Inserts seed entries
-//       let users = [];
-//       for (let i = 1; i <= 50; i++) {
-//         users.push({
-//           id: i,
-//           username: `${names[i]}${faker.number.int({min:0, max:100})}`,
-//           password: faker.internet.password(),
-//           email: `${names[i]}@gmail.com`,
-//           role: i <= 25 ? "teacher" : "student",
-//         });
-//       }
-//       return knex("users").insert(users);
-//     });
-// };
 
 /**
  * @param { import("knex").Knex } knex

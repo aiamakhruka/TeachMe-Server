@@ -1,25 +1,4 @@
-// const { faker } = require('@faker-js/faker');
 
-// exports.seed = function(knex) {
-//     // Deletes ALL existing entries
-//     return knex('classes').del()
-//       .then(function () {
-//         // Inserts seed entries
-//         let classes = [];
-//         for(let i = 1; i <= 25; i++){
-//           classes.push({
-//             id: i,
-//             class_name: `Class ${i}`,
-//             // description: faker.lorem.paragraph(),
-//             price: faker.commerce.price({ min: 100, max: 200, dec: 0}),
-//             class_type: faker.helpers.arrayElement(['online', 'offline']),
-//             user_id: i
-//           });
-//         }
-//         return knex('classes').insert(classes);
-//       });
-//   };
-  
 
 /**
  * @param { import("knex").Knex } knex
