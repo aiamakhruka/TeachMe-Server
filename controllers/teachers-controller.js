@@ -128,8 +128,39 @@ const addTeacher = (req, res) => {
 };
 
 
+
+const GetTeacherprofile = (req, res) => {
+  let teacherId = req.params.id; // get the teacher's ID from the URL
+
+  console.log(req.body)
+  let query = knex.from("teachers")
+  .select(
+    "teachers.teacher_id",
+    "teachers.name",
+    "teachers.age",
+    "teachers.specialization",
+    "teachers.teaching_level",
+    "teachers.experience",
+    "teachers.rating",
+    "teachers.province",
+    "teachers.city",
+    "classes.class_type",
+    "classes.price",
+    "classes.class_name",
+  )
+  .join("classes", "teachers.teacher_id", "classes.teacher_id")
+  .where({ "teachers.teacher_id": teacherId }) // filter by the teacher's ID
+  .then((data) => {
+    res.status(200).json(data); // return the data
+  })
+  .catch((error) => {
+    res.status(500).json({ message: `Unable to retrieve data: ${error}` });
+  });
+};
+
+
 module.exports = {
   getTeachers,
-
+  GetTeacherprofile,
   addTeacher,
 };

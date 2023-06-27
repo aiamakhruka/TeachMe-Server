@@ -12,6 +12,7 @@ const usersRoutes = require("./routes/users-routes");
 const teachersRoutes = require("./routes/teachers-routes");
 const uploadImageRoutes = require("./routes/upload-image-routes");
 
+app.use(express.static("public"));
 
 app.use(cors({ origin: CORS_ORIGIN }));
 app.use(express.json());
