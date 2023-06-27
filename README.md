@@ -30,5 +30,61 @@ Real-time Communication: The platform will facilitate seamless communication bet
 
 <img width="176" alt="image" src="https://github.com/aiamakhruka/TeachMe-Server/assets/111688154/813acc11-89c3-406f-9ff9-b3ecc8069b36">
 
+# Installation
+
+Follow these steps to run a local instance of Ribbon:  
+(You'll need node, npm, and MySQL already installed.)
+
+1. Clone or download this repo.
+#### Set up the backend
+2. Create a new database in MySQL called `ribbon`.
+3. Install server dependencies:  
+   
+   Run `npm install` from inside the server directory.
+   ```bash    
+   $ cd server
+   $ npm install
+   ```
+4. Run migrations
+   ```bash
+   $ npm run migrate
+   ```
+5. Run seeds
+   ```bash
+   $ npm run seed
+   ```
+6. Set environment variables:  
+   
+   Rename `.env_sample` to `.env` and change placeholder values with your own.
+   ```shell
+   PORT=<PORT_NUMER>
+   JWT_SECRET=<SECRET KEY>
+   DB_HOST=<HOST ADDRESS>
+   DB_USER=<YOUR DB USERNAME>
+   DB_PSWD=<YOUR DB PASSWORD>
+   ```
+7. Start the server:
+   ```bash
+   $ node index.js
+   ```
+#### Set up the frontend
+8. Install client dependencies:  
+   
+   Run `npm install` from inside the client directory.
+   ```bash    
+   $ cd ../client
+   $ npm install
+   ```
+9. Set environment variables:  
+   
+   Rename `.env_sample` to `.env` and change the placeholder value to the port you set for the server.
+   ```shell
+   REACT_APP_API_URL=http://localhost:<PORT SET IN /server/.env>
+   ```
+10. Start the React app:
+    ```bash
+    $ npm start
+    ```
+
 <img width="960" alt="image" src="https://github.com/aiamakhruka/TeachMe-Server/assets/111688154/f952261a-3a64-48a1-9f90-6cb7edc5d739">
 
